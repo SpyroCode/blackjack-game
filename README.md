@@ -42,6 +42,9 @@ Una vez que hayas instalado las dependencias y ejecutado el servidor de desarrol
 
 ¡Diviértete jugando al Blackjack! 🃏🎉
 
+# Demo
+Puedes jugar al Blackjack en vivo en [este enlace](https://stupendous-bombolone-27c515.netlify.app/).
+
 ## License
 
 Nest is [MIT licensed](LICENSE).
