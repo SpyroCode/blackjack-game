@@ -4,7 +4,7 @@
 
 
 # blackjack-game
-Este es un juego de Blackjack simple desarrollado en JavaScript utilizando Vite para el desarrollo y construcción del proyecto.
+🌱 - Este es un juego de Blackjack simple desarrollado en JavaScript utilizando Vite para el desarrollo y construcción del proyecto.
 
 # Instalación
 Para jugar al Blackjack, sigue estos pasos:
@@ -21,7 +21,7 @@ Para jugar al Blackjack, sigue estos pasos:
    npm install
 
 # Comandos
-Los siguientes comandos están disponibles para el desarrollo y construcción del proyecto:
+🚀 Los siguientes comandos están disponibles para el desarrollo y construcción del proyecto:
 
 * **Desarrollo**: Inicia un servidor de desarrollo con hot-reloading.
 ```sh
@@ -38,9 +38,12 @@ npm run preview
 
 # Como jugar
 
-Una vez que hayas instalado las dependencias y ejecutado el servidor de desarrollo, puedes jugar al Blackjack abriendo el juego en tu navegador. **Inicia** nuevo juego y **pide** una carta y permite el turno del computador puedes darle **detener** el jugador menor a 21 mas cercano a 21 **Gana**!.
+🃏 - Una vez que hayas instalado las dependencias y ejecutado el servidor de desarrollo, puedes jugar al Blackjack abriendo el juego en tu navegador. **Inicia** nuevo juego y **pide** una carta y permite el turno del computador puedes darle **detener** el jugador menor a 21 mas cercano a 21 **Gana**!.
 
 ¡Diviértete jugando al Blackjack! 🃏🎉
+
+# Demo
+Puedes jugar al Blackjack en vivo en [este enlace](https://stupendous-bombolone-27c515.netlify.app/).
 
 ## License
 
