@@ -12,13 +12,7 @@ export const crearDeck = (tiposDeCarta, tiposEspeciales) => {
     if ( !tiposDeCarta || !tiposEspeciales || tiposDeCarta.length === 0 || tiposEspeciales.length === 0) {
         Toastify({
             text: "Se necesitan los tipos de cartas y los tipos especiales",
-            duration: 3000,
-            newWindow: true,
-            className: "error",
-            close: true,
-            gravity: "top", // `top` or `bottom`
-            position: "right", // `left`, `center` or `right`
-            stopOnFocus: true, // Prevents dismissing of toast on hover
+            className: "info",
             style: {
                 background: "linear-gradient(to right, #00b09b, #96c93d)",
             },
