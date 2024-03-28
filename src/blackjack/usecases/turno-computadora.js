@@ -1,3 +1,4 @@
+import Toastify from 'toastify-js'
 import {crearCartaHtml, pedirCarta, valorCarta} from "./";
 
 /**
@@ -8,8 +9,36 @@ import {crearCartaHtml, pedirCarta, valorCarta} from "./";
  * @param {Array<string>} deck deck de cartas
  */
 export  const turnoComputadora = ( puntosMinimos, puntosHTML, divCartasComputadora, deck =[] ) => {
-    if (!puntosMinimos) throw new Error('Se necesita los puntos minimos son necesarios');
-    if (!deck) throw new Error('Se necesita el deck de cartas');
+    if (!puntosMinimos) {
+        Toastify({
+            text: "Se necesita los puntos minimos son necesarios",
+            duration: 3000,
+            newWindow: true,
+            className: "error",
+            close: true,
+            gravity: "top", // `top` or `bottom`
+            position: "right", // `left`, `center` or `right`
+            stopOnFocus: true, // Prevents dismissing of toast on hover
+            style: {
+                background: "linear-gradient(to right, #00b09b, #96c93d)",
+            },
+        }).showToast();
+    };
+    if (!deck) {
+        Toastify({
+            text: "Se necesita el deck de cartas",
+            duration: 3000,
+            newWindow: true,
+            className: "error",
+            close: true,
+            gravity: "top", // `top` or `bottom`
+            position: "right", // `left`, `center` or `right`
+            stopOnFocus: true, // Prevents dismissing of toast on hover
+            style: {
+                background: "linear-gradient(to right, #00b09b, #96c93d)",
+            },
+        }).showToast();
+    };
 
     let puntosComputadora = 0;
 
@@ -31,13 +60,61 @@ export  const turnoComputadora = ( puntosMinimos, puntosHTML, divCartasComputado
 
     setTimeout(() => {
         if( puntosComputadora === puntosMinimos ) {
-            alert('Nadie gana :(');
+            Toastify({
+                text: "Nadie gana :(",
+                duration: 3000,
+                newWindow: true,
+                className: "info",
+                close: true,
+                gravity: "top", // `top` or `bottom`
+                position: "right", // `left`, `center` or `right`
+                stopOnFocus: true, // Prevents dismissing of toast on hover
+                style: {
+                    background: "linear-gradient(to right, #00b09b, #96c93d)",
+                },
+            }).showToast();
         } else if ( puntosMinimos > 21 ) {
-            alert('Computadora gana')
+            Toastify({
+                text: "Computadora gana",
+                duration: 3000,
+                newWindow: true,
+                className: "info",
+                close: true,
+                gravity: "top", // `top` or `bottom`
+                position: "right", // `left`, `center` or `right`
+                stopOnFocus: true, // Prevents dismissing of toast on hover
+                style: {
+                    background: "linear-gradient(to right, #00b09b, #96c93d)",
+                },
+            }).showToast();
         } else if( puntosComputadora > 21 ) {
-            alert('Jugador Gana');
+            Toastify({
+                text: "Jugador Gana",
+                duration: 3000,
+                newWindow: true,
+                className: "success",
+                close: true,
+                gravity: "top", // `top` or `bottom`
+                position: "right", // `left`, `center` or `right`
+                stopOnFocus: true, // Prevents dismissing of toast on hover
+                style: {
+                    background: "linear-gradient(to right, #00b09b, #96c93d)",
+                },
+            }).showToast();
         } else {
-            alert('Computadora Gana')
+            Toastify({
+                text: "Computadora Gana",
+                duration: 3000,
+                newWindow: true,
+                className: "info",
+                close: true,
+                gravity: "top", // `top` or `bottom`
+                position: "right", // `left`, `center` or `right`
+                stopOnFocus: true, // Prevents dismissing of toast on hover
+                style: {
+                    background: "linear-gradient(to right, #00b09b, #96c93d)",
+                },
+            }).showToast();
         }
     }, 100 );
 }
