@@ -4,7 +4,6 @@
  * 2H = Two of Hearts
  * 2S = Two of Spades
  */
-import _ from "underscore";
 import {crearDeck, pedirCarta, turnoComputadora,valorCarta} from "./usecases/";
 
 
